@@ -34,7 +34,8 @@
     "clean": "rm -rf src/**/*.js && rm -rf src/**/*.d.ts && rm -rf test/**/*.js && rm -rf test/**/*.d.ts",
     "preBuild": "npm run clean",
     "build": "tsc && babel ./src --out-dir ./src --ignore ./node_modules/",
-    "test": "npm run build && istanbul cover -x '**/logger.*' _mocha test/**/*.js"
+    "test": "npm run build && istanbul cover -x '**/logger.*' _mocha test/**/*.js",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "scalts": "1.1.*",
