@@ -1,9 +1,5 @@
-src/**/*.js
-src/**/*.d.ts
 test/**/*.js
 test/**/*.d.ts
-index.js
-index.d.ts
 
 
 # Build
